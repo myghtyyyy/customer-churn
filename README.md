@@ -21,3 +21,11 @@ Clean data → ColumnTransformer (one-hot) → boosting → GridSearchCV (5-fold
 ## Run it
 pip install pandas scikit-learn joblib
 jupyter notebook telco_churn.ipynb
+
+## Explainability (SHAP)
+![summary](shap_summary.png)
+![single customer](shap_waterfall.png)
+
+Tenure and contract type drive most predictions. Short tenure and
+month-to-month contracts push toward churn; two-year contracts and long
+tenure push toward staying.
